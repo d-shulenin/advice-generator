@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: hsl(218, 24%, 31%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: hsl(215, 17%, 27%);
+  width: 30%;
+  padding-top: 3rem;
+  border-radius: 1rem;
+  filter: drop-shadow(1.5rem 2rem 12px black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: hsl(150, 100%, 66%);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.divider {
+  background: url(advice-generator-app-main/images/pattern-divider-desktop.svg)
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 0.8333vw;
+}
+
+.button {
+  width: 4.7rem;
+  height: 4.7rem;
+  position: relative;
+  top: 36px;
+  border-radius: 50%;
+  border: 0;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+
+.button img {
+  width: 40%;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 60%;
+  }
+
+  .divider {
+    height: 1.56vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    width: 80%;
+  }
+}
